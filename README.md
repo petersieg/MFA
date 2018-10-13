@@ -3,7 +3,7 @@
 some files for MFA (Mikrocomputer Für Ausbildung) Computer.
 
 You don't need a video+keyboard card. You can connect a rs232 terminal/pc, even without changing bridges on CPU board.
-Just connect Pin32a+c=GND=db9-5, Pin30c=Rx=db9-2 and Pin29c=Tx=db9-3 to a DB9 sub-d female header.
+Just connect Pin32a+c=GND=db9-5, Pin30c=Rx=db9-2 and Pin29c=Tx=db9-3 to a DB9 sub-d female header. Use 7E1 and baud rates between 1200 and 4800.
 
 DE:
 
