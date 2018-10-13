@@ -17,5 +17,5 @@ Das kann durchaus aus Vorteile haben, einen PC als Aus-/Eingabe zu nutzen. Es k√
 
 ![minicom](https://github.com/petersieg/MFA/blob/master/MFA-minicom.JPG)
 
-![rs232](https://github.com/petersieg/MFA/blob/master/MFA-rs232.JPG)
+![rs232](https://github.com/petersieg/MFA/blob/master/MFA-RS232.JPG)
 
