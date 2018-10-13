@@ -15,4 +15,7 @@ Ich habe heute einen Linux PC mit dem guten, alten minicom angeschlossen - ohne 
 
 Das kann durchaus aus Vorteile haben, einen PC als Aus-/Eingabe zu nutzen. Es können leicht Programme/Daten ausgetauscht werden. Programmlisting einfach als Datei senden als wenn man sie eintippen würde. Genauso kann man ein Listing mitschreiben lassen.
 
-![minicom]()
+![minicom](https://github.com/petersieg/MFA/blob/master/MFA-minicom.JPG)
+
+![rs232](https://github.com/petersieg/MFA/blob/master/MFA-rs232.JPG)
+
