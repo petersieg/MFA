@@ -69,4 +69,10 @@ dann..
 OUT 80,xxx
 ```
 
+Bilder des ersten Versuchsaufbaus:
+
+
+Bild der 'fast fertigen' Karte. Der Audioanschluss muss noch in die Frontblende eingesetzt werden:
+
+https://github.com/petersieg/MFA/blob/master/MFA-speech/MFA-speech.JPG
 
