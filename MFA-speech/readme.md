@@ -43,7 +43,7 @@ https://github.com/jscrane/TTS
 
 ---
 
-Ich habe mich dann für Talkie entschieden.
+Ich habe mich dann für Talkie entschieden. Audiosignal liegt fest an Pin 3. Mann kann einen kleinen Lautsprecher anschließen. Besser ist es aber das über aktive PC Lautsprecher etc. zu führen.
 
 ```
 Erläuterungen zur Sprachausgabe:
