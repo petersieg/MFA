@@ -45,7 +45,7 @@ https://github.com/jscrane/TTS
 
 Ich habe mich dann für Talkie entschieden.
 
-'''
+´´´
 Erläuterungen zur Sprachausgabe:
 
 Verwendet wurde die universelle, parallele Schnittstelle mit 8255.
@@ -67,5 +67,5 @@ Im Basic dann erst:
 OUT 83,160 : REM Steuerwort
 dann..
 OUT 80,xxx
-'''
+´´´
 
