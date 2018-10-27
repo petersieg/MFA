@@ -71,8 +71,12 @@ OUT 80,xxx
 
 Bilder des ersten Versuchsaufbaus:
 
+![sp1](https://github.com/petersieg/MFA/blob/master/MFA-speech/talkie-1.JPG)
+
+![sp2](https://github.com/petersieg/MFA/blob/master/MFA-speech/talkie-2.JPG)
+
 
 Bild der 'fast fertigen' Karte. Der Audioanschluss muss noch in die Frontblende eingesetzt werden:
 
-https://github.com/petersieg/MFA/blob/master/MFA-speech/MFA-speech.JPG
+![sp3](https://github.com/petersieg/MFA/blob/master/MFA-speech/MFA-speech.JPG)
 
