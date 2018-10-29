@@ -4,4 +4,4 @@ Orig. Schaltplan siehe Doku zum MFA System.
 
 UNGETESTED!!
 
-![sp1]()
+![sp1](https://github.com/petersieg/MFA/blob/master/par-io/pcb.png)
