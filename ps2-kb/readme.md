@@ -7,3 +7,6 @@ As always, use at your own risc. Carefully check connections before power it on.
 
 ![ps2-kb](https://github.com/petersieg/MFA/blob/master/ps2-kb/ps-kb-2.JPG)
 
+Verbindungen nach hier: Steckeranschlussstift:
+
+![pins](https://github.com/petersieg/MFA/blob/master/ps2-kb/Pin%20Belegung.png)
