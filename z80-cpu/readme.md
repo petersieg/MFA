@@ -16,11 +16,17 @@ http://www.vaxman.de/projects/tiny_z80/
 
 
 Der zu verwendende EPC musste seriell kommunizieren und das Monitorprogramm im Source verfügbar sein.
+Dies erfüllte obiges Projekt und als Zugabe hatte das Monitorprogramm noch einen Disassembler und einen 
+Forth Interpreter.
 
 Die Idee: EPC einfach mit Strom versorgen und seriell Rx+Tx mit dem Bus verbinden, um den Baugruppenträger 
 inkl. Stromversorgung und die Videokarte/Tastatur als Aus-/Eingabe zu nutzen in einem ersten Schritt.
 
 In einem zweiten Schritt dann ggf. die vorhandenen I/O Baugruppen nutzbar zu machen.
+
+Wir wir schnell heraus fanden benötigt die Videokarte noch einen 2MHz Takt an Pin 2a! Daher entschlossen wir uns die CPU
+mit eben diesen 2MHz anstatt der 4MHz die vorgesehen waren zu versorgen, um dann den Takt an Pin 2a zur Verfügung stellen
+zu können.
 
 Danke der Arbeiten von Georg Schäfer am Monitor ist Schritt 1 inzwischen funktionsfähig. Stand Nov. 2018.
 
