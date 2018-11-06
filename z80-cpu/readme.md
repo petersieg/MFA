@@ -67,5 +67,11 @@ https://forum.classic-computing.de/forum/index.php?thread/14731-mfa-gedanken-f%C
 ;                         Routine gets changed to ignore LF instead of CR
 ```
 
-![z80-mfa]()
+![z80-mfa](https://github.com/petersieg/MFA/blob/master/z80-cpu/MFA-Z80.JPG)
+
+![z80-mon](https://github.com/petersieg/MFA/blob/master/z80-cpu/MFA-Monitor.JPG)
+
+
+
+
 
