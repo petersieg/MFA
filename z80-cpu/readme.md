@@ -18,7 +18,7 @@ http://www.vaxman.de/projects/tiny_z80/
 Der zu verwendende EPC musste seriell kommunizieren und das Monitorprogramm im Source verfügbar sein.
 
 Die Idee: EPC einfach mit Strom versorgen und seriell Rx+Tx mit dem Bus verbinden, um den Baugruppenträger 
-inkl. Stromversorgung und die Videokarte/Tastatur als Aus-/Eingabe zu nutzen imd einem ersten Schritt.
+inkl. Stromversorgung und die Videokarte/Tastatur als Aus-/Eingabe zu nutzen in einem ersten Schritt.
 
 In einem zweiten Schritt dann ggf. die vorhandenen I/O Baugruppen nutzbar zu machen.
 
