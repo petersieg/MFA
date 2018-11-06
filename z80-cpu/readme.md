@@ -24,7 +24,7 @@ inkl. Stromversorgung und die Videokarte/Tastatur als Aus-/Eingabe zu nutzen in 
 
 In einem zweiten Schritt dann ggf. die vorhandenen I/O Baugruppen nutzbar zu machen.
 
-Wir wir schnell heraus fanden benötigt die Videokarte noch einen 2MHz Takt an Pin 2a! Daher entschlossen wir uns die CPU
+Wie wir schnell heraus fanden benötigt die Videokarte noch einen 2MHz Takt an Pin 2a! Daher entschlossen wir uns die CPU
 mit eben diesen 2MHz anstatt der 4MHz die vorgesehen waren zu versorgen, um dann den Takt an Pin 2a zur Verfügung stellen
 zu können.
 
