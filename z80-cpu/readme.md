@@ -69,7 +69,7 @@ https://forum.classic-computing.de/forum/index.php?thread/14731-mfa-gedanken-f%C
 
 ![z80-mfa](https://github.com/petersieg/MFA/blob/master/z80-cpu/MFA-Z80.JPG)
 
-![z80-mon](https://github.com/petersieg/MFA/blob/master/z80-cpu/MFA-Monitor.JPG)
+![z80-mon](https://github.com/petersieg/MFA/blob/master/z80-cpu/Z80-Monitor.JPG)
 
 
 
