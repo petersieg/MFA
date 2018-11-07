@@ -20,9 +20,9 @@ Pfostenleiste um ggf. per Flachbandkabel eine 2te Mini-BUS Platine anzuschließe
 
 Das würde reichen z.B. für:
 
-8085 CPU
-32k-Ram/Rom Karte
-Video/Tastatur Karte
+* 8085 CPU
+* 32k-Ram/Rom Karte
+* Video/Tastatur Karte
 
 
 Oder:
