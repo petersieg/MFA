@@ -27,9 +27,9 @@ Das würde reichen z.B. für:
 
 Oder:
 
-neue Z80 CPU
-Video/Tastatur Karte
-Pararallel Out
+* neue Z80 CPU
+* Video/Tastatur Karte
+* Pararallel Out
 
 
 Wenn man seriell mit dem System arbeitet, hat man Platz für eine andere Karte anstatt der Video/Tastatur Karte.
