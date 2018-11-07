@@ -39,3 +39,6 @@ Und wenn man über ein KURZES Flachbandkabel eine 2te Mini-Bus anschließt noch 
 
 
 UNGETESTET!! Ohne jede Gewähr!
+
+![pcb-bus](https://github.com/petersieg/MFA/blob/master/Mini-BUS/pcb.png)
+
