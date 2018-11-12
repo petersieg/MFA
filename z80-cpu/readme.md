@@ -22,13 +22,14 @@ Forth Interpreter.
 Die Idee: EPC einfach mit Strom versorgen und seriell Rx+Tx mit dem Bus verbinden, um den Baugruppenträger 
 inkl. Stromversorgung und die Videokarte/Tastatur als Aus-/Eingabe zu nutzen in einem ersten Schritt.
 
-In einem zweiten Schritt dann ggf. die vorhandenen I/O Baugruppen nutzbar zu machen.
+In einem zweiten Schritt dann ggf. die vorhandenen I/O Baugruppen nutzbar zu machen. Dazu wurde der UART bereits im Monitor mit 80h angesprochen. Ohne Änderung läuft das so, da der Uart in der original Version auf alles hört. Wenn man aber CS1+2 des Uart von +5V wegnimmt und mit A7 verbindet, so sind alle I/O Adressse bis 7Fh frei für anderes. Dazu müsste dann auch D0-D7, A0-A7 und IOR+IOW mit dem Bus verbunden werden.
 
 Wie wir schnell heraus fanden benötigt die Videokarte noch einen 2MHz Takt an Pin 2a! Daher entschlossen wir uns die CPU
 mit eben diesen 2MHz anstatt der 4MHz die vorgesehen waren zu versorgen, um dann den Takt an Pin 2a zur Verfügung stellen
 zu können.
 
-Danke der Arbeiten von Georg Schäfer am Monitor ist Schritt 1 inzwischen funktionsfähig. Stand Nov. 2018.
+Danke der Arbeiten von Georg Schäfer am Monitor ist Schritt 1 (und 2) inzwischen funktionsfähig. Stand Nov. 2018.
+Source + ROM sind im ZIP File. Assembler ist der zasm: https://k1.spdns.de/Develop/Projects/zasm/Distributions/
 
 Georg hatte Kontakt mit Dr. Bernd Uhlmann und wir dürfen sein Design und das Monitorprogramm hier und im Forum des VzEkC für 
 Hobbyzwecke verwenden.
