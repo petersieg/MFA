@@ -35,6 +35,6 @@ Wenn man seriell mit dem System arbeitet, hat man Platz für eine andere Karte a
 Und wenn man über ein KURZES Flachbandkabel eine 2te Mini-Bus anschließt noch mehr ;-)
 
 
-
-UNGETESTET!! Ohne jede Gewähr!
+Getestet und funktioniert. Anschlusspads für Stromversorgungen könnten etwas größer sein.
+Trotzdem wie immer alles ohne jede Gewähr!
 
