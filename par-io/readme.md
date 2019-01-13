@@ -33,3 +33,14 @@ PC7 - (Strobe)
 N.C
 
 ![sp1](https://github.com/petersieg/MFA/blob/master/par-io/pcb.png)
+
+Debug session closeups:
+
+![dbg1](https://github.com/petersieg/MFA/blob/master/par-io/debug1.jpg)
+
+![dbg2](https://github.com/petersieg/MFA/blob/master/par-io/debug2.jpg)
+
+Ready with Talkie/Speech attached:
+
+![rdy](https://github.com/petersieg/MFA/blob/master/par-io/ready.jpg)
+
