@@ -13164,7 +13164,9 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <part name="IC4" library="74xx-eu" deviceset="74*245" device="N" technology="LS"/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="rcl" deviceset="CPOL-EU" device="E5-6" value="4,7u"/>
+<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2.5-5" value="4,7u"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="0207/10" value="4k7"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="0207/10" value="4k7"/>
 </parts>
 <sheets>
 <sheet>
@@ -13224,7 +13226,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <instance part="GND18" gate="1" x="-86.36" y="66.04" rot="R270"/>
 <instance part="GND19" gate="1" x="-86.36" y="60.96" rot="R270"/>
 <instance part="JP1" gate="A" x="-35.56" y="27.94" rot="R180"/>
-<instance part="GND20" gate="1" x="-33.02" y="10.16" rot="R270"/>
+<instance part="GND20" gate="1" x="-25.4" y="2.54"/>
 <instance part="P+12" gate="1" x="-35.56" y="43.18" rot="R90"/>
 <instance part="C3" gate="G$1" x="-73.66" y="111.76"/>
 <instance part="C4" gate="G$1" x="-43.18" y="111.76"/>
@@ -13232,7 +13234,9 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <instance part="IC4" gate="P" x="-81.28" y="-12.7"/>
 <instance part="P+9" gate="1" x="-81.28" y="-2.54"/>
 <instance part="GND9" gate="1" x="-81.28" y="-22.86"/>
-<instance part="C5" gate="G$1" x="-81.28" y="111.76"/>
+<instance part="C5" gate="G$1" x="-83.82" y="111.76"/>
+<instance part="R5" gate="G$1" x="-20.32" y="12.7" rot="R90"/>
+<instance part="R6" gate="G$1" x="-15.24" y="12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13329,8 +13333,8 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="-43.18" y1="114.3" x2="-53.34" y2="114.3" width="0.1524" layer="91"/>
 <junction x="-63.5" y="114.3"/>
 <junction x="-43.18" y="114.3"/>
+<wire x1="-83.82" y1="114.3" x2="-73.66" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="+"/>
-<wire x1="-81.28" y1="114.3" x2="-73.66" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="7404" gate="P" pin="VCC"/>
@@ -13404,8 +13408,8 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="-43.18" y1="106.68" x2="-53.34" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-63.5" y="106.68"/>
 <junction x="-43.18" y="106.68"/>
+<wire x1="-83.82" y1="106.68" x2="-73.66" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="-"/>
-<wire x1="-81.28" y1="106.68" x2="-73.66" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="7485" gate="P" pin="GND"/>
@@ -13460,12 +13464,18 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="-30.48" y1="10.16" x2="-25.4" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="10.16" x2="-25.4" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="5.08" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="7.62" x2="-25.4" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="17.78" x2="-30.48" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="1"/>
 <junction x="-30.48" y="17.78"/>
 <wire x1="-30.48" y1="17.78" x2="-33.02" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-25.4" y="7.62"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<junction x="-20.32" y="7.62"/>
+<wire x1="-20.32" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -13477,7 +13487,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="A=B" class="0">
 <segment>
 <wire x1="71.12" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <junction x="78.74" y="99.06"/>
@@ -13703,7 +13713,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <pinref part="IC4" gate="A" pin="B1"/>
 </segment>
 </net>
-<net name="RES" class="0">
+<net name="/RES" class="0">
 <segment>
 <wire x1="198.12" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="48.26" x2="167.64" y2="48.26" width="0.1524" layer="91"/>
@@ -13808,7 +13818,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="-7.62" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DSR" class="0">
+<net name="/DSR" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!DSR"/>
 <wire x1="20.32" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
@@ -13817,10 +13827,14 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="5.08" y1="25.4" x2="-7.62" y2="25.4" width="0.1524" layer="91"/>
 <junction x="20.32" y="7.62"/>
 <junction x="-7.62" y="25.4"/>
-<wire x1="-7.62" y1="25.4" x2="-33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="25.4" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="25.4" x2="-33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="17.78" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-20.32" y="25.4"/>
 </segment>
 </net>
-<net name="DTR" class="0">
+<net name="/DTR" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!DTR"/>
 <wire x1="20.32" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
@@ -13832,7 +13846,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="-7.62" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CTS" class="0">
+<net name="/CTS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!CTS"/>
 <wire x1="20.32" y1="12.7" x2="10.16" y2="12.7" width="0.1524" layer="91"/>
@@ -13841,10 +13855,14 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="10.16" y1="30.48" x2="-7.62" y2="30.48" width="0.1524" layer="91"/>
 <junction x="20.32" y="12.7"/>
 <junction x="-7.62" y="30.48"/>
-<wire x1="-7.62" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="30.48" x2="-15.24" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="17.78" x2="-15.24" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-15.24" y="30.48"/>
 </segment>
 </net>
-<net name="RTS" class="0">
+<net name="/RTS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!RTS"/>
 <wire x1="20.32" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
@@ -13870,7 +13888,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <junction x="-27.94" y="88.9"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="-A=B" class="0">
 <segment>
 <pinref part="IC3" gate="C" pin="O"/>
 <wire x1="58.42" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
@@ -13893,7 +13911,7 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/INTEL/8251A.html</descript
 <wire x1="-7.62" y1="22.86" x2="-33.02" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="-RES" class="0">
+<net name="RES" class="0">
 <segment>
 <pinref part="7404" gate="B" pin="O"/>
 <wire x1="119.38" y1="-7.62" x2="111.76" y2="-7.62" width="0.1524" layer="91"/>
