@@ -3,7 +3,7 @@
 some files for MFA (Mikrocomputer Für Ausbildung) Computer.
 
 
-# CC BY-NC-SA
+## CC BY-NC-SA
 
 Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 
 
