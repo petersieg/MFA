@@ -2,3 +2,4 @@
 
 (I was tired of loosing wires drom soldering on backplane)
 
+![ser-adapter](https://github.com/petersieg/MFA/blob/master/par-io/pcb.png)
