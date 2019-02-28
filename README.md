@@ -3,9 +3,9 @@
 some files for MFA (Mikrocomputer Für Ausbildung) Computer.
 
 
-## CC BY-NC-SA
+## CC BY-SA
 
-Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 
+Namensnennung - Weitergabe unter gleichen Bedingungen 
 
 
 You don't need a video+keyboard card. You can connect a rs232 terminal/pc, even without changing bridges on CPU board.
