@@ -15,6 +15,16 @@ F80B  C3 00F8             JMP PRUEF
                           END
 
 ```
+DIP Adressselektion:
+Draufsicht auf Bestückungsseite - VG64 Leiste liegt rechts:
+```
+A A A A
+7 6 5 4
+
+R R R R
+4 3 2 1
+```
+
 Aufgebaute Karte:
 
 ![ser-karte](https://github.com/petersieg/MFA/blob/master/ser-if/rs232-karte.JPG)
