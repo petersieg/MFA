@@ -6,6 +6,15 @@ TESTED now! Works, but some flaws in the pcb:
 
 A0-A3 at 74LS85 are in reversed order.
 
+View from parts placement - VG64 is on the left side:
+```
+A A A A
+7 6 5 4
+
+R R R R
+4 3 2 1
+```
+
 10x Pinheader on left outer position has the following connections from top to bottom when VG64 is to the right side (It should be PC7-NC-PA7..PA0-NC-PC6):
 
 N.C
