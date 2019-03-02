@@ -16,30 +16,20 @@ R R R R
 ```
 
 10x Pinheader on left outer position has the following connections from top to bottom when VG64 is to the right side (It should be PC7-NC-PA7..PA0-NC-PC6):
-
+```
 N.C
-
 PC6 - (ACK)
-
 PA0
-
 PA1
-
 PA2
-
 PA3
-
 PA4
-
 PA5
-
 PA6
-
 PA7
-
 PC7 - (Strobe)
-
 N.C
+```
 
 ![sp1](https://github.com/petersieg/MFA/blob/master/par-io/pcb.png)
 
