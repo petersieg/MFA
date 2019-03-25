@@ -21,12 +21,19 @@ PO-KB-TYP-FILENAME   -START-LEN-S-TR-FPOS-FPDEC
 1082 bytes extracted to file REV1
 ```
 PO   = Dir entry #; dir position 1..79
+
 KB   = KennByte
+
 TYP  = MAT/SPS/BAS
+
 START= Saved from/load to address
+
 LEN  = Length
+
 S    = Side
+
 TR   = Track
+
 FPOS*= File position in image file HEX - DEC
 
 ---
