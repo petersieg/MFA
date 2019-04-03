@@ -38,6 +38,10 @@ FPOS*= File position in image file HEX - DEC
 
 ---
 
+md-ins.c inserts a max. 4096 bytes file into an image - mostly UNTESTED! Use with caution! Only pn backup files!
+
+---
+
 test.img is such a 320kb floppy image file - one can use with Gotek+FlashFloppy.
 
 Place file FF.CFG also on USB stick, to have FlashFloppy behave as required for MFA system!
