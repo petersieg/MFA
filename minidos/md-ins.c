@@ -104,6 +104,7 @@ int main(int argc, char *argv[])
     int i = 0;
     int idx = 0;
 	int adr = 0;
+	long int ladr = 0;
 	int pos = 1; // position in directory 1..79
     int fpos= 0; // position in image file
     int len = 0; // file length
@@ -198,23 +199,25 @@ EINTRAGS-NUMMER  BINAER-DARSTELLUNG  SEITE   SPUR
         }        
 	    printf("\r\n");
         // file to insert?
-        printf("File to insert: %s - %d\n",argv[2],xpos);
+        //printf("File to insert: %s - %d\n",argv[2],xpos);
         if ((argc > 2) && (xpos < 79))
         {
             // read max 4096 bytes at position xfpos into image buffer
             // xfpos = pos * 4096 since each file occupied min. 4096 bytes starting at 4096 (0x1000).
             xfpos = xpos * 4096;
+            idx = 0;
             if( (fp = fopen(argv[2], "rb")) == NULL )
             {
                 puts("[!]Problem with opening the file: "); puts(argv[2]);
             }
             else
             {
-                idx = 0;
                 idx = fread(buff + xfpos,sizeof(byte),4096,fp);
                 fclose(fp);
                 printf("%d bytes inserted from file %s at buffer position:%04X\r\n",idx, argv[2], xfpos);
             }
+            if (idx > 0)
+            {
             // here: idx=0 error/0 lenght file; idx>0 = number of bytes read=file length inserted at xfpos
             // now we need to to create the corresponding dir entry
 
@@ -232,17 +235,28 @@ XOOO 0010 - SPS
 XOOO 0011 - BAS */
             pos = xpos;
             xpos = (pos - 1) * 32; // from directory entry to buffer position
-            if (strcmp(argv[3],"MAT") == 0) buff[xpos] = 0b000001;
-            if (strcmp(argv[3],"SPS") == 0) buff[xpos] = 0b000010;
-            if (strcmp(argv[3],"BAS") == 0) buff[xpos] = 0b000011;
+//          default is deleted entry, if no valid typ is identified
+            buff[xpos] = 0b000000;
+            if (argc > 3)
+            {
+                if (strlen(argv[3]) == 3)
+                {
+                    if (strcmp(argv[3],"MAT") == 0) buff[xpos] = 0b000001;
+                    if (strcmp(argv[3],"SPS") == 0) buff[xpos] = 0b000010;
+                    if (strcmp(argv[3],"BAS") == 0) buff[xpos] = 0b000011;
+                }
+            }
 //2. - 13. BYTE   :: FILE-NAME INCL. ".", RECHTS MIT 80h AUFGEFUELLT
             strcpy(buff+xpos+1,argv[2]);
             for (i = strlen(argv[2]); i<12; i++) buff[xpos+1+i] = 0x80;
 //14. - 15. BYTE  :: START-ADR (BEI MEHRFACH-EINTRÄEGEN START-ADR DES 1. BLOCKS)
-            sscanf(argv[4],"%04X",&adr);
-//          printf("Load address: %s - %04X\n",argv[4],adr);           
-            buff[xpos+13] = (adr & 0xFF);
-            buff[xpos+14] = ((adr & 0xFF00) >> 8);
+            ladr = 0x8000; // default
+//          printf("Load address: %04lX %d\n",ladr, argc);           
+            if (argc > 4) ladr = strtol(argv[4], NULL, 16);
+            if ((ladr < 0) || (ladr > 0xFFFF)) ladr = 0x8000;
+//          printf("Load address: %s - %04lX\n",argv[4],ladr);           
+            buff[xpos+13] = (ladr & 0xFF);
+            buff[xpos+14] = ((ladr & 0xFF00) >> 8);
 //16. - 17. BYTE  :: LAENGE (BEI MEHRFACH—EINTRÄEGEN LAENGE DES GESAMT-FILES)
             buff[xpos+15] = (idx & 0xFF);
             buff[xpos+16] = ((idx & 0xFF00) >> 8);
@@ -266,6 +280,7 @@ XOOO 0011 - BAS */
             if ((current & 0b11) == 0b11) printf("BAS-");
             if ((current & 0b11) == 0b10) printf("SPS-");
             if ((current & 0b11) == 0b01) printf("MAT-");
+            if ((current & 0b11) == 0b00) printf("DEL-");
 //2. - 13. BYTE   :: FILE-NAME INCL. ".", RECHTS MIT 80h AUFGEFUELLT
             for (idx=1; idx<12; idx++)
             {
@@ -298,6 +313,7 @@ XOOO 0011 - BAS */
                 fclose(fp);
                 printf("%d bytes saved to image file %s\r\n",idx, argv[1]);
             }
+            } // idx > 0 = file to insert loaded
         }
         free(buff);
     }
