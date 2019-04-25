@@ -1,0 +1,21 @@
+# VGA-Terminal for MFA
+
+Based on the work off: 
+
+Jan Roesler           jan.roesler@tu-bs.de 
+
+Sebastian Brueckner  se.brueckner@tu-bs.de
+
+Link to mikrocontroller Thread:
+
+https://www.mikrocontroller.net/topic/143445
+
+// Attention: ONLY atmeg644P will work!
+
+// avrdude -c usbasp -p m644p -U flash:w:dmm_vga.hex:i
+
+// avrdude -c usbasp -p m644p -U lfuse:w:0xE0:m -U hfuse:w:0xD9:m
+
+Software is yet not useable for MFA! CR/NL; local echo etc. need to be adjusted!!
+
+
