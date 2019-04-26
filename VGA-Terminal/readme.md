@@ -16,5 +16,5 @@ https://www.mikrocontroller.net/topic/143445
 // avrdude -c usbasp -p m644p -U lfuse:w:0xE0:m -U hfuse:w:0xD9:m
 
 
-![MFA-VGA1](https://github.com/petersieg/MFA/blob/master/MFA-speech/talkie-1.JPG)
+![MFA-VGA1](https://github.com/petersieg/MFA/blob/master/VGA-Terminal/MFA-VGA-Karte.JPG)
 
