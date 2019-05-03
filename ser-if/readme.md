@@ -2,7 +2,7 @@
 
 Etwas minimalisierte Schaltung. Standard: 2400 8N1 bei Teiler 64:1 (bei 16:1 = 9600 8N1).
 
-Aufgebaut und getestet lt. Aufbautest:
+Aufgebaut und getestet lt. Aufbautest (dazu muss Adressselektion Fx sein) - Bei Floppy auf z.B. 8000h ändern:
 
 ```
 F800  3E 2A       PRUEF:  MVI A,2A    ; '*'
@@ -14,7 +14,7 @@ F80B  C3 00F8             JMP PRUEF
 
 ```
 DIP Adressselektion:
-Draufsicht auf Bestückungsseite - VG64 Leiste liegt rechts:
+Draufsicht auf Bestückungsseite (für obigen Aufbautest muss Adresse Fx sein) - VG64 Leiste liegt rechts:
 ```
 A A A A
 7 6 5 4
