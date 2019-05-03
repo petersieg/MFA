@@ -1,6 +1,6 @@
 # Nachbau serielle Schnittstelle mit 8251
 
-Etwas minimalisierte Schaltung.
+Etwas minimalisierte Schaltung. Standard: 2400 8N1
 
 An den 8x Pins liegen von untern an: GND; Tx; Rx; ...)
 
