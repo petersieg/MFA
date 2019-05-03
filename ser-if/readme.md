@@ -25,6 +25,18 @@ R R R R
 4 3 2 1
 ```
 
+8-pol Leiste von oben nach unten gesehen - VG64 Leiste liegt rechts (*=4k7 Pulldown):
+```
++5V
+RTS
+CTS*
+DTR
+DSR*
+RX
+TX
+GND
+```
+
 Aufgebaute Karte:
 
 ![ser-karte](https://github.com/petersieg/MFA/blob/master/ser-if/rs232-karte.JPG)
