@@ -39,25 +39,24 @@ const int IRQpin =  3;
 PS2Keyboard keyboard;
 
 void setup() {
-  int pin;
 
   // set output pins
   pinMode(D1, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D1, LOW);
   pinMode(D2, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D2, LOW);
   pinMode(D3, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D3, LOW);
   pinMode(D4, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D4, LOW);
   pinMode(D5, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D5, LOW);
   pinMode(D6, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D6, LOW);
   pinMode(D7, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(D7, LOW);
   pinMode(STROBE, OUTPUT);
-  digitalWrite(pin, LOW);
+  digitalWrite(STROBE, LOW);
  
   keyboard.begin(DataPin, IRQpin);
   delay(1000);
